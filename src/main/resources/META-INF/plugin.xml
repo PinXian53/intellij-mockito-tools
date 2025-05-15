@@ -28,6 +28,43 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
     </extensions>
+    <actions>
+        <action id="com.pino.intellijmockitotools.ThenReturnAction"
+                class="com.pino.intellijmockitotools.ThenReturnAction"
+                text="MT: when(...).thenReturn(...)"
+                icon="/icons/actionIcon.svg"
+        >
+            <add-to-group group-id="EditorPopupMenu" />
+        </action>
+        <action id="com.pino.intellijmockitotools.DoNothingAction"
+                class="com.pino.intellijmockitotools.DoNothingAction"
+                text="MT: doNothing().when(...)"
+                icon="/icons/actionIcon.svg"
+        >
+            <add-to-group group-id="EditorPopupMenu" />
+        </action>
+        <action id="com.pino.intellijmockitotools.DoThrowAction"
+                class="com.pino.intellijmockitotools.DoThrowAction"
+                text="MT: doThrow(...).when(...)"
+                icon="/icons/actionIcon.svg"
+        >
+            <add-to-group group-id="EditorPopupMenu" />
+        </action>
+        <action id="com.pino.intellijmockitotools.DoReturnAction"
+                class="com.pino.intellijmockitotools.DoReturnAction"
+                text="MT: doReturn(...).when(...)"
+                icon="/icons/actionIcon.svg"
+        >
+            <add-to-group group-id="EditorPopupMenu" />
+        </action>
+        <action id="com.pino.intellijmockitotools.ThenThrowAction"
+                class="com.pino.intellijmockitotools.ThenThrowAction"
+                text="MT: when(...).thenThrow(...)"
+                icon="/icons/actionIcon.svg"
+        >
+            <add-to-group group-id="EditorPopupMenu" />
+        </action>
+
+    </actions>
 </idea-plugin>
